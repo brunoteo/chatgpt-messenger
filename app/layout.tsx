@@ -2,9 +2,9 @@ import './globals.css';
 import SideBar from '@/components/SideBar';
 import SessionProvider from '@/components/SessionProvider';
 import { getServerSession } from "next-auth";
-import { authOptions } from './api/auth/[...nextauth]/route';
 import Login from '@/components/Login';
 import ClientProvider from '@/components/ClientProvider';
+import { authOptions } from '@/lib/auth';
 
 export const metadata = {
   title: 'ChatGPT clone',
