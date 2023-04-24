@@ -13,8 +13,8 @@ export async function POST(request: Request) {
     if (!prompt)
         return NextResponse.json({ answer: "Please provide a prompt!" }, { status: 400 });
 
-    if (!prompt)
-        return NextResponse.json({ answer: "Please provide a valid caht ID!" }, { status: 400 });
+    if (!chatId)
+        return NextResponse.json({ answer: "Please provide a valid chat ID!" }, { status: 400 });
 
     const response = await query(prompt, model);
 
